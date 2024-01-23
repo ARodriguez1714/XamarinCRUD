@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor.Views.Convertir"
+             NavigationPage.HasNavigationBar="False">
+    <Grid BackgroundColor="#FDE07F">
+        <StackLayout VerticalOptions="Center"
+                     Margin="20">
+            <Image Source="https://i.ibb.co/LCGYhSg/planeta-tierra.png"
+                   Margin="20"/>
+            <Frame HasShadow="False"
+                   CornerRadius="15">
+                <Entry Keyboard="Numeric"
+                       Placeholder="Centimetros (cm)"
+                       TextColor="Black"
+                       PlaceholderColor="black"
+                       FontSize="Large"
+                       x:Name="txtcm"/>
+            </Frame>
+            <Button Text="Calular"
+                    CornerRadius="10"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Margin="0,20,0,0"
+                    TextTransform="None"
+                    BackgroundColor="#7C50E9"
+                    TextColor="White"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Resultado: "
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                <Label Text="0.00"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+            <Button Text="Volver"
+                    BackgroundColor="white"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    CornerRadius="10"
+                    x:Name="btnVolver"
+                    Clicked="btnVolver_Clicked"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor.Views.Menuprincipal"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout BackgroundColor="#FEE6B9">
+        <Label Text="Conversor"
+               FontSize="40"
+               FontAttributes="Bold"
+                                 Margin="0,20,0,0"
+               HorizontalOptions="Center"/>
+
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="20"
+                                 CornerRadius="20"
+               HasShadow="false">
+            <StackLayout VerticalOptions="Center"
+                         Spacing="20">
+                <Image Source="https://media.gq.com.mx/photos/649860ad0322827b89283a41/4:3/w_2248,h_1686,c_limit/elemental%20pelicula.jpg"/>
+                <Label Text="(cm) a (m)"
+                           FontAttributes="Bold"
+                       FontSize="40"
+                       HorizontalOptions="Center"/>
+                <Button Text="Iniciar"
+                                        TextTransform="None"
+                        BackgroundColor="#FDE080"
+                        CornerRadius="10"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        x:Name="btnIniciar"
+                        Clicked="btnIniciar_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
