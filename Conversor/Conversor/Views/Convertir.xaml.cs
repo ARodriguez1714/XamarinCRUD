@@ -22,6 +22,25 @@ namespace Conversor.Views
         {
             cm = Convert.ToDouble(txtcm.Text);
             m = cm / 100;
+            lblResultado.Text = m.ToString() + " m";
+        }
+
+        private void Validar()
+        {
+            if (!string.IsNullOrEmpty(txtcm.Text))
+            {
+                Calcular();
+            }
+            else
+            {
+                DisplayAlert("Error","Ingrese una cantidad.", "ok");
+                lblResultado.Text = "0.0 m";
+            }
+        }
+
+        private void btnCalcular_Clicked(object sender, EventArgs e)
+        {
+            Validar();
         }
 
         private void btnVolver_Clicked(object sender, EventArgs e)

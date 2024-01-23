@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Conversor.Views.Convertir"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             Visual="Material">
     <Grid BackgroundColor="#FDE07F">
         <StackLayout VerticalOptions="Center"
                      Margin="20">
-            <Image Source="https://i.ibb.co/LCGYhSg/planeta-tierra.png"
+            <Image Source="Mundo.png"
                    Margin="20"/>
             <Frame HasShadow="False"
                    CornerRadius="15">
@@ -24,7 +25,9 @@
                     Margin="0,20,0,0"
                     TextTransform="None"
                     BackgroundColor="#7C50E9"
-                    TextColor="White"/>
+                    TextColor="White"
+                    x:Name="btnCalcular"
+                    Clicked="btnCalcular_Clicked"/>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Resultado: "
                        FontSize="Large"
@@ -33,7 +36,8 @@
                 <Label Text="0.00"
                        FontSize="Large"
                        FontAttributes="Bold"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       x:Name="lblResultado"/>
             </StackLayout>
             <Button Text="Volver"
                     BackgroundColor="white"

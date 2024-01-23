@@ -16,7 +16,7 @@
                HasShadow="false">
             <StackLayout VerticalOptions="Center"
                          Spacing="20">
-                <Image Source="https://media.gq.com.mx/photos/649860ad0322827b89283a41/4:3/w_2248,h_1686,c_limit/elemental%20pelicula.jpg"/>
+                <Image Source="cintaMetrica.png"/>
                 <Label Text="(cm) a (m)"
                            FontAttributes="Bold"
                        FontSize="40"
